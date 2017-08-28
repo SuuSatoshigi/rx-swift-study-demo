@@ -1,0 +1,6 @@
+framework module Pods_michelle_rxswift_project01 {
+  umbrella header "Pods-michelle_rxswift_project01-umbrella.h"
+
+  export *
+  module * { export * }
+}

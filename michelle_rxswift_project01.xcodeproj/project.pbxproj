@@ -14,6 +14,7 @@
 		320CFF751F541D1400A67C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320CFF741F541D1400A67C49 /* Assets.xcassets */; };
 		320CFF781F541D1400A67C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320CFF761F541D1400A67C49 /* LaunchScreen.storyboard */; };
 		320CFF831F541D1400A67C49 /* michelle_rxswift_project01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 320CFF821F541D1400A67C49 /* michelle_rxswift_project01Tests.m */; };
+		E008CE97BC3BB774A606E3BE /* Pods_michelle_rxswift_project01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8673580367B9BDC0788DDB /* Pods_michelle_rxswift_project01.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,10 @@
 		320CFF7E1F541D1400A67C49 /* michelle_rxswift_project01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = michelle_rxswift_project01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		320CFF821F541D1400A67C49 /* michelle_rxswift_project01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = michelle_rxswift_project01Tests.m; sourceTree = "<group>"; };
 		320CFF841F541D1400A67C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8AFD39DD20828594F54648 /* Pods-michelle_rxswift_project01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-michelle_rxswift_project01.release.xcconfig"; path = "Pods/Target Support Files/Pods-michelle_rxswift_project01/Pods-michelle_rxswift_project01.release.xcconfig"; sourceTree = "<group>"; };
+		9B8673580367B9BDC0788DDB /* Pods_michelle_rxswift_project01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_michelle_rxswift_project01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A471209C953D26DCCD5D0994 /* Pods-michelle_rxswift_project01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-michelle_rxswift_project01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-michelle_rxswift_project01/Pods-michelle_rxswift_project01.debug.xcconfig"; sourceTree = "<group>"; };
+		D5B2AEB48C2AB55D1B5BA4A6 /* Pods_michelle_rxswift_project01Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_michelle_rxswift_project01Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E008CE97BC3BB774A606E3BE /* Pods_michelle_rxswift_project01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,8 @@
 				320CFF671F541D1400A67C49 /* michelle_rxswift_project01 */,
 				320CFF811F541D1400A67C49 /* michelle_rxswift_project01Tests */,
 				320CFF661F541D1400A67C49 /* Products */,
+				346A80250EE6A58823367363 /* Pods */,
+				90DBF1805532226B3EE01899 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +119,24 @@
 			path = michelle_rxswift_project01Tests;
 			sourceTree = "<group>";
 		};
+		346A80250EE6A58823367363 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A471209C953D26DCCD5D0994 /* Pods-michelle_rxswift_project01.debug.xcconfig */,
+				4C8AFD39DD20828594F54648 /* Pods-michelle_rxswift_project01.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90DBF1805532226B3EE01899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B8673580367B9BDC0788DDB /* Pods_michelle_rxswift_project01.framework */,
+				D5B2AEB48C2AB55D1B5BA4A6 /* Pods_michelle_rxswift_project01Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 320CFF871F541D1400A67C49 /* Build configuration list for PBXNativeTarget "michelle_rxswift_project01" */;
 			buildPhases = (
+				17621ADBA5198BE9F5478E41 /* [CP] Check Pods Manifest.lock */,
 				320CFF611F541D1400A67C49 /* Sources */,
 				320CFF621F541D1400A67C49 /* Frameworks */,
 				320CFF631F541D1400A67C49 /* Resources */,
+				8236AC496309EF006F0C737B /* [CP] Embed Pods Frameworks */,
+				67AA81AD180714F3E1CD92F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,12 +189,13 @@
 				TargetAttributes = {
 					320CFF641F541D1400A67C49 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = QVP9497UY3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					320CFF7D1F541D1400A67C49 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = QVP9497UY3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 320CFF641F541D1400A67C49;
 					};
@@ -209,6 +239,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17621ADBA5198BE9F5478E41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67AA81AD180714F3E1CD92F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-michelle_rxswift_project01/Pods-michelle_rxswift_project01-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8236AC496309EF006F0C737B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-michelle_rxswift_project01/Pods-michelle_rxswift_project01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		320CFF611F541D1400A67C49 /* Sources */ = {
@@ -353,25 +431,29 @@
 		};
 		320CFF881F541D1400A67C49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A471209C953D26DCCD5D0994 /* Pods-michelle_rxswift_project01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QVP9497UY3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = michelle_rxswift_project01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "michelle.swift.test.michelle-rxswift-project01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		320CFF891F541D1400A67C49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C8AFD39DD20828594F54648 /* Pods-michelle_rxswift_project01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QVP9497UY3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = michelle_rxswift_project01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "michelle.swift.test.michelle-rxswift-project01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -384,6 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "michelle.swift.test.michelle-rxswift-project01Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/michelle_rxswift_project01.app/michelle_rxswift_project01";
 			};
 			name = Debug;
@@ -397,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "michelle.swift.test.michelle-rxswift-project01Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/michelle_rxswift_project01.app/michelle_rxswift_project01";
 			};
 			name = Release;
@@ -420,6 +504,7 @@
 				320CFF891F541D1400A67C49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		320CFF8A1F541D1400A67C49 /* Build configuration list for PBXNativeTarget "michelle_rxswift_project01Tests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +513,7 @@
 				320CFF8C1F541D1400A67C49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
